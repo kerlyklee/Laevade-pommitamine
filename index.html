@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Laevade pommitamine</title>
+        <link rel="stylesheet" type="text/css" href="shipGame.css">
+        <link rel="shortcut icon" href="#">
+        <meta name="viewport" content="width=device-width, initial-scale=1", content="user-scalable=no">
+
+    </head>
+    <body class="background">
+        <div class="header">
+         Laevade Pommitamine 
+        </div>
+        <div>
+             <form class="choises" id="sizes">Vali mängulaua suurus: <br>
+                <input type="radio" id="3x3" name="size" value="3" checked> 3x3 ruutu 
+                <input type="radio" id="4x4" name="size" value="4"> 4x4 ruutu 
+                <input type="radio" id="5x5" name="size" value="5"> 5x5 ruutu 
+				<input type="radio" id="6x6" name="size" value="6"> 6x6 ruutu 
+				<input type="radio" id="7x7" name="size" value="7"> 7x7 ruutu 
+				<input type="radio" id="8x8" name="size" value="8"> 8x8 ruutu 
+				<input type="radio" id="9x9" name="size" value="9"> 9x9 ruutu 
+				<input type="radio" id="10x10" name="size" value="10"> 10x10 ruutu 
+            </form>
+			<h2>Nimi:</h2>
+            
+			<input type="text" placeholder="Sisesta oma nimi" id="name"><br>
+			<h2>Sisesta laevade arv:</h2>
+            <input type="number" min="1" max="9" id="ships" ><br>
+            <br>
+		
+            <button class="start" type="button" id="startGame" onclick="startGame()">START</button>
+		
+			 
+			
+        </div>
+		
+        <br>
+        <div class="board"   id="gameBoard"> </div>
+		
+		<div class="board" id="gameCompBoard"></div>
+			
+		<br>
+		<div id="scores">
+        <!-- <button class="resultbutton" type="button" onclick="kuva() "> Eelmised tulemused </button><br> -->
+            <a target="tulemused" href="results.html" class="resultbutton">&nbsp Kõik mängud &nbsp</a>
+        </div>
+		<br>
+		<div>
+		
+		
+		<table class="resultTable" id="score">
+            <tr>
+                <th>Laud</th>
+                <th>Lahingu laevade arv</th>
+                <th>Sina pommitamised</th>
+                <th>Arvuti pommitamised</th>
+                <th>Aeg</th>
+                <th>Seis</th>
+            </tr>
+            <tr id="0"></tr>
+            <tr id="1"></tr>
+            <tr id="2"></tr>
+            <tr id="3"></tr>
+            <tr id="4"></tr>
+            <tr id="5"></tr>
+            <tr id="6"></tr>
+            <tr id="7"></tr>
+            <tr id="8"></tr>
+            <tr id="9"></tr>
+            </table>
+             
+          
+        </div>
+        <script src="shipGame.js"></script> 
+      
+     
+        
+        
+    </body>
+</html>

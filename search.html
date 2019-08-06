@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 	<meta charset="utf-8">
+	<title>Otsing</title>
+	<link rel="stylesheet" type="text/css" href="shipGame.css">
+	<link rel="shortcut icon" href="#">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="data.js"></script>
+
+</head>
+<body class="background">
+	<div class="header">
+		Otsing:
+	</div>
+	<br>
+	<div>
+		
+	
+		<input type="text" id="searchPlayer" placeholder="Mängija nimi" style=" border-radius: 5px; border: 0px;"></input>
+		
+		<button onclick="search()" class="resultbutton">Otsi</button>		
+	
+	</div>
+	<div id="results">
+		 <table id="gameDataTable">
+            <tr>
+       
+                <th id="sNimi"> Mängija nimi <button onclick="sortNamesAZ()">A-Z</button><button onclick="sortNamesZA()">Z-A</button> </th> 
+                <th id="sMinupunktid">Minu skoor<button onclick="sortMyPointsAZ()">A-Z</button><button onclick="sortMyPointsZA()">Z-A</button></th>
+                <th id="sVastasepunktid">Vastase skoor<button onclick="sortCompPointsAZ()">A-Z</button><button onclick="sortCompPointsZA()">Z-A</button></th>
+                <th id="sManguaeg">Mängu aeg<button onclick="sortGameTimeAZ()">A-Z</button><button onclick="sortGameTimeZA()">Z-A</button></th>
+                <th id="sKuupaev">Kuupäev<button onclick="sortDatesAZ()">A-Z</button><button onclick="sortDatesZA()">Z-A</button></th>
+            </tr>
+        </table>
+
+	</div>
+	<div id="scores">
+			<br>
+            <a target="tulemused" href="results.html" class="resultbutton"> Tulemused </a>
+     </div>
+		<br>
+		<div id="scores">
+			<br>
+            <a target="Laevade pommitamine" href="index.html" class="resultbutton"> Tagasi Mängima </a>
+     </div>
+</body>
+</html>

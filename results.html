@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="shipGame.css">
+    <script type="text/javascript" src="shipGame.js"></script>
+    <title>Edetabel</title>
+</head>
+<body style="background-color: #2e343d;">
+    <h1 class="header">Edetabel</h1> <label><h2>Mängija nimi: </h2></label>
+    <input type="text" id="playerNameSearch">
+    <button  onclick="searchScores();">OTSI</button>
+<br>
+    <h3><tr>
+    <th>Kuupäev<button onclick="loadResult(2);">A-Z</button><button onclick="loadResult(7);">Z-A</button></th>
+    <th>Mängija nimi<button onclick="loadResult(3);">A-Z</button><button onclick="loadResult(8);">Z-A</button></th>
+    <th>Mängjia punktid<button onclick="loadResult(4);">A-Z</button><button onclick="loadResult(9);">Z-A</button></th>
+    <th>Arvutipunktid<button onclick="loadResult(5);">A-Z</button><button onclick="loadResult(10);">Z-A</button></th>
+    <th>Mängu aeg<button onclick="loadResult(6);">A-Z</button><button onclick="loadResult(11);">Z-A</button></th> </tr></h3>
+<br> 
+
+    <h2><tr>
+    <div id="gameDate" style="display: inline-block; width: 15%"></div>
+    <div id="playerName" style="display: inline-block; width: 15%"></div>
+    <div id="myShipsDestroyed" style="display: inline-block; width: 17%"></div>
+    <div id="compShipsDestroyed" style="display: inline-block; width: 17%"></div>
+    <div id="gameTime" style="display: inline-block; width: 17%"></div><tr></h2>
+
+    
+    <script type="text/javascript">loadResult(1);</script>
+</body>
+</html>
